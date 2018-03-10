@@ -7,33 +7,66 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="css/landing.css">
     <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
 </head>
 
 <body>
-    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#display-form">Donate Food</button> 
+    <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#display-form">Donate Food</button>
     <!-- Modal for donate food form -->
-    
+
     <div class="modal" id="display-form">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                    <h5 class="modal-title">DONATE FOOD</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                    <form>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="exampleInputOrganization">Organization Name</label>
+                                <input type="organization" class="form-control" id="exampleInputOrganization" aria-describedby="emailHelp" placeholder="Enter organization">
+                                <small id="organizationHelp" class="form-text text-muted">We'll never share your organization name with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFoodName">Food Type</label>
+                                <input type="foodtype" class="form-control" id="exampleInputFoodType" placeholder="Food Type">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFoodName">Food Name</label>
+                                <input type="foodname" class="form-control" id="exampleInputFoodName" placeholder="Food Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputDescription">Description</label>
+                                <input type="description" class="form-control" id="exampleInputDescription" placeholder="Description">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputQuantity">Quantity</label>
+                                <input type="quantity" class="form-control" id="exampleInputQuantity" placeholder="Quantity">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputAddress">Address</label>
+                                <input type="address" class="form-control" id="exampleInputAddress" placeholder="Pick Up Address">
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+    </div>
     <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

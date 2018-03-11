@@ -8,7 +8,7 @@ var path = require("path");
 // ===============================================================================
 // ROUTING
 // ===============================================================================
-var fname = path.join(__dirname, "../data/friends.js");
+// var fname = path.join(__dirname, "../data/friends.js");
 
 module.exports = function (app) {
     // API GET Requests
@@ -16,4 +16,7 @@ module.exports = function (app) {
     // In each of the below cases when a user visits a link
     // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
     // ---------------------------------------------------------------------------
+    app.post("/api/listing", function(request,response){
+        console.log(request.data);
+    });
 };

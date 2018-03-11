@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Neighborhood Nibbles | Landing</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jumbotron.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+    <script type="type/javascript" src="javascript/landing.js"></script>
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="../images/nn.jpg" alt="nn-logo" id="logo" />
+        </div>
+    </div>
+    <div class="page-header">
+        <h1>Neighborhood Nibbles</h1>
+        <button type="submit" class="btn btn-success">Log in</button>
+        <button type="submit" class="btn btn-success">Sign Up</button>
+    </div>
+    <div class="jumbotron">
+        <div class='parent-button'>
+            <button type="submit" class="ja btn btn-success" data-toggle="modal" data-target="#display-form">Pick Up Nibbles</button>
+            <button type="submit" class="ja btn btn-success">Post Nibbles</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>About</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+                    Donec sed odio dui. </p>
+                <p>
+                    <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>FAQs</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+                    Donec sed odio dui. </p>
+                <p>
+                    <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Contact Us</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+                    felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+                    massa justo sit amet risus.</p>
+                <p>
+                    <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2018 NeighborhoodNibbles, Inc.</p>
+        </footer>
+    </div>
+    <!-- Modal for donate food form -->
+    <div class="modal" id="display-form">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">DONATE FOOD</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="organization">Organization Name</label>
+                                <input type="organization" class="form-control" id="organization" aria-describedby="organizationHelp" placeholder="Enter organization">
+                                <small id="organizationHelp" class="form-text text-muted">We'll never share your organization name with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="foodType">Food Type</label>
+                                <input type="foodtype" class="form-control" id="foodType" placeholder="Food Type">
+                            </div>
+                            <div class="form-group">
+                                <label for="foodName">Food Name</label>
+                                <input type="foodname" class="form-control" id="foodName" placeholder="Food Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description">Description</label>
+                                <input type="description" class="form-control" id="description" placeholder="Description">
+                            </div>
+                            <div class="form-group">
+                                <label for="quantity">Quantity</label>
+                                <input type="quantity" class="form-control" id="quantity" placeholder="Quantity">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="address" class="form-control" id="address" placeholder="Pick Up Address">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" id="submit">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script>
+    $("#submit").click(function () {
+        event.preventDefault();
+
+        let details = {
+            organization: $("#organization").val().trim(),
+            foodType: $("#foodType").val().trim(),
+            foodName: $("#foodName").val().trim(),
+            description: $("#description").val().trim(),
+            quantity: $("#quantity").val().trim(),
+            address: $("#address").val().trim()
+        }
+        console.log(details);
+        
+
+    });
+    
+
+    $.post("api/listing", details, function (data) {
+        if (data) {
+            alert("Your Food donation is done!");
+        } else {
+            alert("Your food donation is not done")
+        }
+
+        // Clear the form when submitting
+        $("#organization").val("");
+        $("#foodType").val("");
+        $("#foodName").val("");
+        $("#description").val("");
+        $("#quantity").val("");
+        $("#address").val("");
+    });
+</script>

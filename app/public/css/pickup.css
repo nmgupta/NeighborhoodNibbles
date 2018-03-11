@@ -1,0 +1,24 @@
+body {
+    background-color: #F8F3D4 !important;
+}
+img {
+    height: 75px;
+    margin-top: 25px;
+    margin-left: 25px;
+    float: left;
+   
+    
+}
+
+thead {
+    font-weight: bold;
+}
+
+
+.page-header {
+    margin-top:25px;
+}
+.pageTitle,h3,h2{
+    text-align: center;
+}
+

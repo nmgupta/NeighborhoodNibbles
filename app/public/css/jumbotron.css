@@ -2,9 +2,10 @@
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+  background: #F8F3D4 !important;
 }
 .jumbotron {
-	background: url('https://static1.squarespace.com/static/563b4d74e4b0d8beddbfe949/563b4dd5e4b0d4f2c9bc2a64/563b5adee4b07b20460e0a18/1446730465786/?format=2500w') center / cover;
+	background: url('../images/background.jpg') center / cover;
 	height: 550px;
 }
 #div.navbar-collapse.collapse.navbar-right.btn.btn-success {
@@ -32,9 +33,22 @@ div#navbar.navbar-collapse.collapse.navbar-right {
 h1 {
 	font-family: 'Lobster Two', cursive;
 }
-#logo {
-	width: 50px;
+
+button.btn.btn-success {
+    margin-left: 30px;
 }
+
+.page-header {
+    display: block;
+    margin-left: 750px;
+}
+#logo {
+    width: 190px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto 
+}
+
 label {
     font-size: 20px;
 }

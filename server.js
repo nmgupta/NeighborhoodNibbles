@@ -10,8 +10,8 @@ var mysql = require("mysql");
 var connection = mysql.createConnection({
   host: 'ysp9sse09kl0tzxj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
   user: 'aewnwlqme5ihzywl',
-  password: 'u7mkguo0qzlnzxas',
-  database: 'nndb'
+  password: 's33hbd4lqem6tsf7',
+  database: 'tflusev0rh0pa4i8'
 })
 
 app.use(express.static('app/public'))

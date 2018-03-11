@@ -29,6 +29,15 @@ div#navbar.navbar-collapse.collapse.navbar-right {
 	/*justify-content: center;
 }*/
 }
+h1 {
+	font-family: 'Lobster Two', cursive;
+}
+#logo {
+	width: 50px;
+}
+label {
+    font-size: 20px;
+}
 button.ja.btn.btn-success {
     padding-left: 30px;
     padding-right: 20px;

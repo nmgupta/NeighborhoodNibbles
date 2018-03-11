@@ -1,61 +1,32 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  background: #F8F3D4 !important;
-}
-.jumbotron {
-	background: url('../images/background.jpg') center / cover;
-	height: 550px;
-}
-#div.navbar-collapse.collapse.navbar-right.btn.btn-success {
-	margin: 10px;
-}
- nav.navbar.navbar-inverse.navbar-fixed-top{
-	background-color: #F8F3D4;
-}
-div#navbar.navbar-collapse.collapse.navbar-right {
-	padding: 10px;
-}
-.navbar-brand {
-	color: green;
-}
-.parent-button {
-	/*position: absolute;*/
-
-    /*top: 50%;*/
-    margin-top: 200px;
-    text-align: center;
-    padding: 25px;
-	/*justify-content: center;
-}*/
-}
-h1 {
-	font-family: 'Lobster Two', cursive;
-}
-
-button.btn.btn-success {
-    margin-left: 30px;
-}
-
-.page-header {
-    display: block;
-    margin-left: 750px;
-}
-#logo {
-    width: 190px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto 
-}
-
-label {
-    font-size: 20px;
-}
-button.ja.btn.btn-success {
-    padding-left: 30px;
-    padding-right: 20px;
-    padding-top: 2px;
-    font-size: 18px;
-}
-.center-btn { text-align: center }
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .jumbotron {
+      background: url('https://static1.squarespace.com/static/563b4d74e4b0d8beddbfe949/563b4dd5e4b0d4f2c9bc2a64/563b5adee4b07b20460e0a18/1446730465786/?format=2500w') center / cover;
+      height: 550px;
+  }
+  #div.navbar-collapse.collapse.navbar-right.btn.btn-success {
+      margin: 10px;
+  }
+   nav.navbar.navbar-inverse.navbar-fixed-top{
+      background-color: green;
+  }
+  div#navbar.navbar-collapse.collapse.navbar-right {
+      padding: 10px;
+  }
+  .navbar-brand {
+      color: green;
+  }
+  .parent-button {
+      /*position: absolute;*/
+  
+      /*top: 50%;*/
+      margin-top: 200px;
+      text-align: center;
+      padding: 25px;
+      /*justify-content: center;
+  }*/
+  }
+  .center-btn { text-align: center }

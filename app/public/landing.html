@@ -9,25 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../../favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
     <link href="css/jumbotron.css" rel="stylesheet">
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/jumbotron.css">
     <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
     <script type="type/javascript" src="javascript/landing.js"></script>
+
 </head>
 
 <body>
@@ -42,9 +31,7 @@
         <button type="submit" class="btn btn-success">Log in</button>
         <button type="submit" class="btn btn-success">Sign Up</button>
     </div>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-        <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
         <div class='parent-button'>
             <button type="submit" class="ja btn btn-success" data-toggle="modal" data-target="#display-form">Pick Up Nibbles</button>
             <button type="submit" class="ja btn btn-success">Post Nibbles</button>
@@ -89,21 +76,7 @@
             <p>&copy; 2018 NeighborhoodNibbles, Inc.</p>
         </footer>
     </div>
-    <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-    </script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <!-- Modal for donate food form -->
-
     <div class="modal" id="display-form">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -114,7 +87,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form method="POST">
                         <fieldset>
                             <div class="form-group">
                                 <label for="organization">Organization Name</label>
@@ -147,7 +120,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onClick="onSubmit()">Save changes</button>
+                    <button type="submit" class="btn btn-primary" id="submit">Save changes</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -159,3 +132,38 @@
 </body>
 
 </html>
+
+<script>
+    $("#submit").click(function () {
+        event.preventDefault();
+
+        let details = {
+            organization: $("#organization").val().trim(),
+            foodType: $("#foodType").val().trim(),
+            foodName: $("#foodName").val().trim(),
+            description: $("#description").val().trim(),
+            quantity: $("#quantity").val().trim(),
+            address: $("#address").val().trim()
+        }
+        console.log(details);
+        
+
+    });
+    
+
+    $.post("api/listing", details, function (data) {
+        if (data) {
+            alert("Your Food donation is done!");
+        } else {
+            alert("Your food donation is not done")
+        }
+
+        // Clear the form when submitting
+        $("#organization").val("");
+        $("#foodType").val("");
+        $("#foodName").val("");
+        $("#description").val("");
+        $("#quantity").val("");
+        $("#address").val("");
+    });
+</script>

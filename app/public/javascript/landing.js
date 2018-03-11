@@ -6,12 +6,9 @@ function onSubmit() {
     let quantity = $("#quantity").val();
     let address = $("#address").val();
 
-    if (!validate(selectedAnswer)) {
-        alert("Please complete the entire form with all options selected");
-    } else {
         $.ajax({
             type: "POST",
-            url: "/api/listing",
+            url: "/listing",
             data: {
                 "organization": organization,
                 "foodType": foodType,
@@ -25,7 +22,7 @@ function onSubmit() {
                 clearForm();
             }
         });
-    }
+    
 }
 function clearForm() {
     $("#organization").val("");

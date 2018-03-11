@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/nmgupta/NeighborhoodNibbles/issues"
   },
-  "homepage": "https://github.com/nmgupta/NeighborhoodNibbles/app/public/landing.html",
+  "homepage": "https://github.com/nmgupta/NeighborhoodNibbles/blob/master/app/public/landing.html",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
